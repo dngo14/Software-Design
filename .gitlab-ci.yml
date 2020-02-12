@@ -1,0 +1,5 @@
+image: stodevx/stograde:latest
+build:
+    stage: build
+    script:
+        - stograde --ci
