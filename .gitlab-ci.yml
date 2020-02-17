@@ -1,4 +1,4 @@
-image: stodevx/stograde:latest
+image: stodevx/stograde:latest-gcc
 build:
     stage: build
     script:
