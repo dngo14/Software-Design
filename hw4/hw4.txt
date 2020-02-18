@@ -1,0 +1,145 @@
+Daniel Ngo 
+HW 4
+
+Exercise 1 (CQ):  What would happen in the above code if the second guard were changed from n % 3 == 1 to n % 3 > 0?
+    For any division with a remainder of 1 or 2 would create the output "This integer has a remainder of 1, when divided by 3"
+
+Exercise 2 (CQ):  What will the following loop do?
+  int x = 2;
+  while (x < 5) {
+    cerr << "*";
+    x += 2;
+  }
+    while x is less than 5 print *
+    so it would print "**"
+Exercise 3 (CQ):  What will the following loop do?
+  int x = 5;
+  while (x > 0) {
+    cerr << "loading... \n";
+    --x;
+  }
+it would print "
+loading...
+loading...
+loading...
+loading...
+loading...
+"
+
+Exercise 4 (CQ):  What does the following loop do?
+  for (int x = 3; x >= 0; --x) {
+    cerr << "Loading... \n";
+  }
+this would print
+"
+Loading...
+Loading...
+Loading...
+Loading...
+
+Exercise 7 (CQ):  Why do you think we moved the line that writes "Blastoff!!!" inside of the for loop?  Look back at where it was in countdown.cpp, and see if you can figure out what would have happened if we hadn’t moved that line (and put an if statement around it).  Why is the if statement around that line needed?
+if the "blastoff" statement was in the original spot it would still print "blastoff" at the end of the loop thus it is needed in the for loop and the if statement is there if it reaches 1, which in countdown2.cpp it won't.
+
+Exercise 9 (CQ):  We left the “Blastoff!!!” line in the same place in this example.  Was that necessary?  Try moving it back out to where it was before (and remove the if statement that was around it) and see if that changes the behavior at all.
+it was not neccesary because once the loop is over then it would print "blastoff", the if statement was also not needed since the "blastoff" was after the loop
+
+Exercise 10 (CQ):  Write a for loop that will make the iterator i go from 100 to 0 in steps of 5 (meaning the sequence 100, 95, 90, … , 15, 10, 5, 0).
+#include<iostream>
+using namespace std;
+
+int main() {
+  cerr << "Countdown:\n";
+  for (int i = 100; i > -1; i=-5) {
+    cerr << i << "\n";
+  }
+  cerr << "0!!!\n";
+}
+
+Exercise 11 (CQ):  Start by setting an int variable n to 1.  Then use a while loop to double n until n is greater than 100.  Do not use a break statement.
+#include<iostream>
+using namespace std;
+
+int main() {
+  cerr << "Countdown:\n";
+  for (int n = 1; n < 100; n=n*2) {
+    cerr << n << "\n";
+  }
+  cerr << "Over!!!\n";
+}
+
+Exercise 12 (CQ):  Write a loop that will make the iterator i be the even numbers from 0 to 100 (inclusive).  Within the loop, set a variable n to be i2, except when i is evenly divisible by 5 (use a continue) and print out n.
+#include<iostream>
+using namespace std;
+
+int main() {
+    for (int i = 0; i < 101; i=i+2) {
+        int n=i*i;
+        if (i%5==0) {
+            cerr << n << "\n";
+        }
+    }
+}
+
+
+
+Exercise 13 (CQ):  Write a loop that successively sets a variable n to be the first 10 Fibonacci numbers (1, 1, 2, 3, 5, 8, 13, 21, 34, 55).
+#include<iostream>
+using namespace std;
+
+int main() {
+    cerr << "Fibbonacci:\n";
+    cerr << "1\n";
+    cerr << "1\n";
+    int n=1, k=1, t=0;
+    for (int i=0; i<8; i++) {
+        cerr << t << "\n";
+        t = n+k;
+    }
+}
+
+Exercise 16 (CQ):  Download an image from the web, move it to your hw4 directory using an appropriate command for the Linux shell (you saw how to do this in lab0), resize it, and change the app.yaml file to place your new image at the center of a green View (you will need to use what you know about Views and View layout).  When you have it working, please paste the content of your app.yaml file into in your hw4.txt file.
+- View:
+    style:
+      backgroundColor: forestgreen
+      flex: 1
+    children:
+    - Image:
+        source: panda2.png
+        style:
+          width: 100
+          height: 100
+          position: absolute
+          left: 110
+          top: 170
+
+Exercise 17 (CQ):  What character is at index [15]?
+t 
+
+Exercise 18 (CQ):  Modify the yaml for the message bubble to show the time and the author below the text message, with the time to the left of the author, and copy your modified yaml into your hw4.txt file.  (Be careful with indentation… it won’t work if the indentation is not consistent!)
+- View:
+          style:
+            backgroundColor: aqua
+            width: 200
+            borderRadius: 15
+            marginBottom: 5
+            marginLeft: 50
+          children:
+            - Text: # message
+                index: 15
+                style:
+                  color: black
+                  fontSize: 20
+                  marginLeft: 10
+            - Text: # author
+                index: 10
+                style:
+                  color: green
+                  fontSize: 15
+                  marginLeft: 160
+            - Text: #time
+                  index: 1
+                  style:
+                    color: gray
+                    fontsize: 10
+                    left: 10 
+             

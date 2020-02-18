@@ -1,0 +1,49 @@
+Exercise 1 (CQ):  Predict what will be printed for the cerr lines that print “A. “, “B. “, and “C. “.  Take your time to make the prediction; this exercise can help you understand many other cases.
+A. 128
+B. 1
+C. -1
+
+Exercise 2:  Now actually try it: paste in the code to a file called overlap.cpp, compile it (be sure to use ~/show_mem.o on the compile line), and run it in the terminal to see what shows up as a result of the cerr statements.  Explain what happened, including whether your prediction was accurate (do not go back and change your prediction).
+When you put into the byte, you have to reverse the byte and thus it gets its value
+
+Exercise 4 (CQ):  Without running the code, figure out what the counter would be at the end of loop A, assuming that n = 10.
+20
+
+Exercise 5 (CQ):  What is a formula that describes what counter would be for loop A, in terms of n?
+counter = n*2
+
+Exercise 6 (CQ):  Without running the code, figure out what the counter would be at the end of loop B, assuming that n = 10.
+300
+
+Exercise 7 (CQ):  What is a formula that describes what counter would be for loop B, in terms of n?
+counter = n*(n*3)
+
+Exercise 8 (CQ):  Without running the code, figure out what the counter would be at the end of loop C, assuming that n = 10.
+220
+
+Exercise 9 (CQ):  What is a formula that describes what counter would be for loop C, in terms of n?
+counter = (n*(n+1)*(n+2))/6
+
+Exercise 10: Please try to figure out what this code will do without running it, and then save it as nested_loop.cpp, compile and run it to find out if you were correct.  Make sure you could explain what this code is doing (and how it does it) to another student who hasn’t seen the code before.
+the code prints out a 8 by 8 square with alternating + and -
+
+Exercise 11 (CQ--copy just the question at the end into your hw5.txt file): Suppose we have a function that is defined as follows:
+int mystery(int i, int j, int k) {
+    int res = (2*i + k) % j;
+    res = (2*res + j) % k;
+    return res;
+  }
+
+Suppose further that we call this function, and store the results, as follows:
+
+  int n = 3, m = 2, nn = 2;
+  int z1 = mystery(n, m, nn);
+  int z2 = mystery(n + m, m + nn, nn + n);
+
+What are the values of z1 and z2?
+- 0
+- 0
+
+Exercise 12 (CQ): Briefly explain what the f1 function does.
+- Counts down from 10 to 1
+
