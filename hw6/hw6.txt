@@ -1,0 +1,48 @@
+Exercise 1 (CQ):  Predict what will be printed for A, B, and C.  Take your time to make the prediction; this exercise can help you understand how signed shorts and unsigned chars are stored.
+A= 2^16
+0000 0000
+0000 0000
+0000 0000 0000 0000 1000 0000 0000 0000
+B=256
+0000 1000
+0000 0000
+0000 0000 0000 0000
+C=-1
+0000 0000 0000 0000 1111 1111 1111 1111
+
+Excercise 2:
+my prediction was wrong. It seems that the values were put in different spots then what I thought
+Since it is a short, there would be 16 bits
+also you would need to reverse the bits
+
+Exercise 3:  Analyze the following loop:
+for ( int i = 0; i <= n; ++i ) {
+  for ( int j = i; j <= n; ++j ) {
+    ++counter;
+  }
+}
+
+counter = 5151 since it adds 101 and then 100 and then 99 all the way to 0
+counter = (n+1)*((n+2)/2)
+
+Exercise 4:  Analyze the following loop:
+for ( int i = 0; i <= n; ++i ) {
+  for ( int j = 0; j <= i/2; ++j ) {
+    ++counter;
+  }
+  i = i + 2;
+}
+counter = 867
+counter = ((n/2+1)*((n/4)-2^(n/25-1))
+this seems to be the addition of the summation of 49 and the summation of 51
+
+
+Exercise 5:  Analyze the following loop:
+for ( int i = 0; i <= n; ++i ) {
+  for ( int j = 0; j <= i/2; ++j ) {
+    i = i + 1;
+    ++counter;
+  }
+}
+counter = 120
+counter = n-1
