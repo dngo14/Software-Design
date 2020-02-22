@@ -1,0 +1,42 @@
+- View:
+    style:
+      width: 300
+      height: 300
+      borderRadius: 150
+      backgroundColor: yellow
+    children:
+        - View:
+            style:
+              width: 50
+              height: 60
+              borderRadius: 30
+              backgroundColor: black
+              left: 50
+              top: 75
+        - View:
+            style:
+              width: 50
+              height: 60
+              borderRadius: 30
+              backgroundColor: black
+              left: 175
+              top: 17
+        - View:
+            style: 
+              width: 120
+              height: 60
+              borderBottomLeftRadius: 80
+              borderBottomRightRadius: 80
+              backgroundColor: black
+              position: absolute
+              top: 200
+              left: 85
+        - View:
+            style:
+              width: 110
+              height: 110
+              borderRadius: 60
+              backgroundColor: yellow
+              position: absolute
+              left: 89
+              top: 140

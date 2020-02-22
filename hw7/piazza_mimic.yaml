@@ -1,0 +1,126 @@
+- View:
+    style:
+      width: 800
+      height: 600
+      backgroundColor: grey
+    children:
+        - View:
+            style:
+              width: 800
+              height: 50
+              backgroundColor: darkblue
+            children:
+              - Text:
+                  index: 0
+                  style:
+                    color: white
+                    fontSize: 30
+              - Text:
+                  index: 7
+                  style:
+                    color: green
+                    fontSize: 20
+        - View:
+            style:
+              width: 800
+              height: 50
+              backgroundColor: lightgrey
+            children:
+              - View:
+                  style:
+                    width: 50
+                    height: 25
+                    backgroundColor: darkblue
+                    top: 55
+              - View:
+                    style:
+                      width: 260
+                      height: 25
+                      backgroundColor: white
+                      top: 30
+                      left: 55
+              - View:
+                  style:
+                    width: 315
+                    height: 20
+                    backgroundColor: lightgrey
+                    top: 35
+              - View:
+                  style:
+                    width: 315
+                    height: 40
+                    backgroundColor: white
+                    top: 40
+              - View:
+                  style:
+                    width: 315
+                    height: 20
+                    backgroundColor: lightgrey
+                    top: 45
+              - View:
+                  style:
+                    width: 315
+                    height: 65
+                    backgroundColor: white
+                    top: 50
+              - View:
+                  style:
+                    width: 315
+                    height: 65
+                    backgroundColor: white
+                    top: 55
+              - View:
+                  style:
+                    width: 315
+                    height: 60
+                    backgroundColor: white
+                    top: 60
+              - View:
+                  style:
+                    width: 315
+                    height: 50
+                    backgroundColor: white
+                    top: 65
+              - View:
+                  style:
+                    width: 315
+                    height: 50
+                    backgroundColor: lightyellow
+                    top: 70
+              - View:
+                  style:
+                    width: 315
+                    height: 50
+                    backgroundColor: white
+                    top: 75
+        - View:
+                style:
+                  width: 60%
+                  height: 32%
+                  backgroundColor: white
+                  left: 40%
+        - View:
+                style:
+                  width: 60%
+                  height: 27%
+                  backgroundColor: white
+                  left: 40%
+                  top: 10
+        - View:
+                style:
+                  width: 60%
+                  height: 20%
+                  backgroundColor: white
+                  left: 40%
+                  top: 20
+
+              
+ 
+       
+
+            
+
+
+
+            
+

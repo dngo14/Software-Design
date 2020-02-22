@@ -1,0 +1,70 @@
+Daniel Ngo
+
+Excercise 1
+Analyze the following recursive function:
+void recursion(int n) {
+  double x = 2 * 3;
+  x = x * 3;
+  ++counter;
+  cerr << counter << endl;
+ 
+  if (n > 0) {
+    recursion(n - 1);
+  }
+}
+counter would just hold 1 and be printed 10 times since the recursion call 
+is called 10 times and everytime it is called, counter is reset
+My estimate was partially correct 
+If n was 20 it would print 1 20 times and the counter would dusplay 1 every time
+
+
+Exercise 2 (CQ): Analyze the following recursive function:
+void recursion(int n) {
+  double x = 2 * 3;
+  x = x * 3;
+  ++counter;
+  cerr << counter << endl;
+ 
+  if (n > 0) {
+    recursion(n - 1);
+    recursion(n - 1);
+  }
+}
+This one would disply counter as 1 also since it would be reset if you call recursion again.
+This would print 20 times rather than 1 since recursion is called twice rather than once
+If there was a global counter, counter would display 20 
+If n was 20 it print 1 40 times or if there is a global counter would be 40
+
+Exercise 3 (CQ): Analyze the following recursive function:
+void recursion(int n) {
+  double x = 2 * 3;
+  x = x * 3;
+  ++counter;
+  cerr << counter << endl;
+ 
+  if (n > 0) {
+    recursion(n/2);
+  }
+}
+
+This one would print counter as 1 5 times but if there was a global counter, counter would display as 5
+and if n was 20 it would print counter as 1 ten times or a global counter would hold the value 10
+
+Exercise 4 (CQ):  Briefly explain (in at most three sentences) what this program does, and how it works.
+This program would creat int j that holds the value of 561210745
+it would then put that value at index 4 then the program would get the characters at index 4,5,6,7
+and then print them
+
+Exercise 6 (CQ): Suppose you have an array e that contains 100 elements. Design a loop that will compute the sum of all the elements of e.  For this exercise, you only need to write the loop itself (the includes the body of the loop), not the rest of the code.
+counter = 0
+for (i=0; i<99; i++) {
+  counter += a[i];
+  cerr << counter << "\n";
+}
+
+Exercise 16 (CQ):  We can also combine these forms of redirection:
+the contents of myfile would go into the program myprog which would then put those numbers in the program myprog and those values would be put in the 
+another myprog and then those files would be inserted into myfile.out3
+
+
+
