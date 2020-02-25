@@ -1,0 +1,28 @@
+Exercise 1 (CQ): Analyze the following recursive function:
+void recursion(int n) {
+  double x = 2 * 3;
+  x = x * 3;
+  ++counter;
+  cerr << counter << endl;
+ 
+  if (n > 0) {
+    recursion(n/2);
+    recursion(n/2);
+    recursion(n/2);
+  }
+}
+    This program would call the recursion function 3 times and within
+    the recursion formula the counter would be added 5 times the first time
+    and then 2 times and then 1 time which then equal 8 for the counter
+    Then when n is 20 it would add to counter 10 times the first time and then
+    5 times the second time and then 2 times the last time which make counter
+    equal to 17
+
+Exercise 6 (CQ):  modify write_file.cpp so that you write a null byte in the middle of the greeting.  You can do this by changing the array after you create it:  greeting[5] = 0;  Compile and run it, so that a.txt now has a null byte in the middle.  Verify in your code editor that it does.  Now compile and run read_file.cpp.  What is the output, and why?  Modify read_file.cpp slightly to print out the number of bytes it read... did it read in the whole file, or just up to the null byte?
+   running the code makes the output read out to the null byte rather thant he whole file
+
+Exercise 8 (CQ): In at most three sentences (no more than 6 lines in your hw8.txt file), describe how you think this explains what was happening between the React app and bridge.py when you used the visualizer for Lab1.
+I believe that when we use the call bridge.py, it creates a connection between the app.yaml/client and the server located somewhere in St.Olaf. Whenever we save new
+information in the app.yaml, a new sequence of bytes is sent to the server which would then send a sequence of bytes back. These bytes are then unpackaged and 
+the client would interpret the bytes to display the information. 
+
