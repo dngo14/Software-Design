@@ -1,0 +1,57 @@
+Exercise 1 (CQ):  For the following code, identify which kind of & is used in each of the places where the & occurs:
+
+#include<iostream>
+using namespace std;
+
+int f(int &a, int b) {
+  int *p;
+  p = &b;
+  return a & (b + 2);
+}
+
+int main() {
+  int x = 3, *y;
+  int &z = x;
+  y = &z;
+  z = f(x, z);
+  cerr << x << " " << z << endl;
+}
+
+the first & in the function f is a refernce "&a"
+the second & at "&b" is an address-of operator
+the third in the return function is bitwise function
+then in the main "&z" is a reference
+then when it is "y=&z" is an adress-of operator
+
+Exercise 2 (CQ).  Write out two more equivalences from our five variables above (don’t make new ones).  Don’t just swap the side that a variable or value is on, but actually come up with two that we have not yet expressed.
+d == 104
+*d == 'h'
+
+Exercise 3 (CQ):  For the following code, identify which kind of * is used in each of the places where the * occurs:
+#include<iostream>
+using namespace std;
+  
+int f(int *a, int b) {
+  int p;
+  p = *a;
+  return p * (b + 2);
+}
+
+int main() {
+  int x = 3, *y;
+  y = &x;
+  int *z;
+  z = y;
+  *y = 7;
+  x = f(z, *y);
+  cerr << x << endl;
+}
+
+the first * in the function f creates a pointer 
+the second * accesses the value
+the third in the function f is multiplication
+In the main the first one creates a pointer
+the second one creates another pointer z
+the third one accesses the value of y and changes it to 7
+the last accesses the value and inputs it into the function f
+
