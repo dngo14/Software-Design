@@ -1,0 +1,22 @@
+Exercise 2 (CQ):  In the situation described above, b[3] would indicate the array element starting at what address in memory?  How many bytes would that array element occupy?
+b[3] would be at the address 612 and would hold 4 bytes since it is an integer
+
+Exercise 3 (CQ):  Suppose we have another pointer c, of type short *, that stores the address 800.  If we write c[2], that would indicate an array element starting at what memory address?  How many bytes would that array element occupy?
+c[2] would be at the address at 804
+
+Exercise 4 (CQ):  In the situation described above, b2[5] would indicate the array element starting at what address in memory?
+b2[5] would at the address 636
+
+Exercise 7 (CQ):  Compare your memory diagram to the following, and explain any differences.  (Hint:  the diagram below is missing an important detail!)
+It seems to be missing the main function and the variable that defines the array 
+
+Exercise 9 (CQ): check your work on the previous exercise;  Explain if your output does not match the following:
+2 3 5 2 
+2 3 5 5 
+2 3 6 6 
+2 3 7 6
+ My work matched the previous excercise
+
+Exercise 12 (CQ): The number 0 is quite special in C++: it is used as the first array index, it is used for pointers that go nowhere, and it is the only number that means false. Can you imagine a situation where the latter two properties could be used together?
+This could be seen when a an operator returns false and once it returns false it makes it so the pointer would go no where.
+
