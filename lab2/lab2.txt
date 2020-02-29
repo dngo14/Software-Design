@@ -1,0 +1,17 @@
+Exercise 1:  Compile and run the share0.cpp program, and test it to see what it does.  When you want to stop testing, type ctrl-c.  (in a file called lab2.txt) Describe in your own words what this program does, from the user point of view.  Then describe (in your own words) how the boolean variable first_time is used to make the behavior what it is.
+
+The program takes input from the user and then puts it in the array. In the loop in takes the input and prints it out along with the ok.
+The boolean value makes sure that the user input is only asked once rather than the unlimited times in the loop.
+
+
+Exercise 13:  verify that your code is working, so that you can print files to the screen as indicated.  Explain, in your own words, how the whole client-server interaction works (put this in lab2.txt).
+The client-server interaction works through hidden text files withint the computer. Firstly, the client would request a response
+which would then prompt the user for an input. After receieveing the input the client function would put the input in a .request file. The server function would then
+read this file and then make a response file which the client function would read and send to the user. 
+
+Exercise 14:  Compile this new server and try it out (by running ./client, while bridge0.py is still active).  If you like, (this is optional) replace the minimal text prompts with something more interesting.  Now explain, in three sentences in the lab2.txt file, how you think it works.  In particular, please explain the role of the state variable.
+Mostly everything is the same as excercise 13 however there is an additional step in the process.
+The state variable makes it so when outputting a message to the user, it starts at index 20 rather than 1 since
+the first 20 bytes are saved for the file name. In addition to this it continually changes the index of global mem at 40, 41, and 42
+and those variables would hold the values that user inputs. The if statements check if those inexes hold 1 or 2 and then pushes the user to
+a different index when they choose option 1 or 2.
