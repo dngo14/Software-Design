@@ -1,0 +1,6 @@
+Exercise 1 (CQ):  How many bytes are needed to store a Town?
+    12 bytes were neccesary to store Town
+
+Exercise 6 (CQ):  You should now see a file called cached_input in your directory.  Open it in your code editor.  Some of this file may look familiar... what do you see at the very end of the file?
+at the end of the file are dashes
+
