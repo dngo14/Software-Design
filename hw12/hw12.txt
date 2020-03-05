@@ -1,0 +1,22 @@
+Exercise 2 (CQ): Why is the return value from the new operator a memory address?
+the return value is the address since the variable is a pointer that holds that address
+
+Exercise 3 (CQ): Roughly how much memory can you allocate on a lab machine, before the system refuses to allocate more? (Make a test program to find out.  You don’t need to turn in the test program, just your answer to the question.)
+About 6 times 10^9
+
+Exercise 4 (CQ): Carefully compare the following program (Alloc2.cpp) with the following memory diagram (and ignore the two places where “cout:” is printed--just look at what comes after the “cout:”). Where, if anywhere, is the difference between a pointer to a single value and a pointer to a sequence of values shown?
+When pointing to an array there are indexes and when putting values into the array you need to put indexes in to spedify where to put the values
+
+Exercise 5: Write a program swap_ptr.cpp just like Alloc2.cpp, but swap the addresses stored by the two pointers after the memory is allocated. That is, give p0 the address that started out in p1, and give p1 the address that started out in p0. (You may want to create a third, temporary pointer in order to swap the pointer values.) (CQ) At this point, can you use p0 to access members of the array? Can you use p1[0]? What happens if you try to print p1[1]?
+Yes, yes you can use p0 to access the array, you can also use p1[0], however when you try to print p1[1] it prints out 0
+
+Exercise 12 (CQ):  Explain, in your own words, how to keep track of the number of clicks in an app, including why it is necessary to use the just_starting() function
+To keep track of the number of clicks in an app, it is neccessary to put aside memmory aside to keep track the number of clicks.
+To do this we created a variable at a arbitrary memmory address and then put in 0 as the value. After that we used a just_starting function so that
+it does not reset after every single click but rather start at 0 first and then count how many clicks the client presses and continuosly update the 
+variable inside the arbitrary memmory address and then print it on the screen after every click. 
+
+Exercise 13 (CQ):  Explain, in your own words, why it doesn’t work to set the index of the Text component to index [5], which is where we are storing our counter.  Hint:  consider what the bytes will actually contain at index [5], and at index [10].
+It would not work since bytes at index 5 would contain integers rather than chars which would be stored in 
+the index 10 since it is using -Text
+
