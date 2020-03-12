@@ -1,0 +1,4 @@
+Exercise 2 (CQ): Explain how the memory diagram would change, given your additions. (You do not need to draw it; an explanation is enough.)
+     The initial value of color would be changed from 3 to the number after the function was called
+     which is 6 in my case
+
