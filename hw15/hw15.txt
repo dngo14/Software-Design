@@ -1,0 +1,14 @@
+Exercise 6 (CQ):  Read through the code carefully, and explain what the code will do.  In particular, predict whether pump p2 will turn on as a result of calling the controller() member function, or not.
+So the at first creates a user stuct called Pump0 which holds a boolean value and 2 floats.
+there is also 3 functions within this could to update the pressure, start the pump and stop the pump. 
+Lastly there is a controller function that contains various if staements to see whether there is enough water running for the pump to activate.
+In the main 2 varibales of the struct Pump0 are created. P1 contains water running at false so the pump is off at first, but then the pressure is put to 10
+which is above the threshold of 8 which would then make p1.running true when p1.controller is called and so the pump would turn on. 
+For p2, p2.running is not put at a true or false statement and so there is no value there which would not allow running p2 to be initialized and thus there would be an error. 
+
+Exercise 7 (CQ):  Read the code in the second version carefully, and again predict whether calling the controller() for p2 will turn on the motor.
+The new code is essentially the same as excercise 6. but instead there is fucntion that is called to create all the variables which would make it so the user would not forget to input all the variables.
+However, for p2, the controller function was called before p2 was initialized and thus there would eb an error. 
+
+I believe that the as_integer goes through each of the characters in the array and coverts into an integer until it reachers the null byte. 
+It probably also takes how many of charcters there are and multiples it by a multiple of 10 so if there is three numbers 256, it would multiple 2 by 100, 5 by 10 and 6 by 1 then add them together. 

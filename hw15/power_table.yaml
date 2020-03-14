@@ -1,0 +1,42 @@
+- View:
+    style:
+      width: 500
+      height: 100%
+      backgroundColor: navy
+    children:
+      - View:
+          style:
+            width: 88%
+            height: 30%
+            position: absolute
+            left: 30
+            top: 20
+            backgroundColor: lightblue
+          children:
+            - Text:
+                style:
+                  fontSize: 25
+                  color: black
+                index: 500
+      - TextInput:
+          index: 10
+          len: 40
+          style:
+            position: absolute
+            left: 15
+            top: 400
+            width: 90%
+            height: 30
+            fontSize: 20
+            backgroundColor: 'white'
+            borderColor: 'gray'
+            borderWidth: 1
+- Text:
+    style:
+      color: red
+      fontSize: 1
+
+
+
+    
+
