@@ -1,0 +1,36 @@
+- View:
+    style:
+      flex: 5
+      width: 340
+      height: 100
+      backgroundColor: rgb(139, 69, 19)
+    children:
+      - Image:
+          source: https://staticdelivery.nexusmods.com/mods/110/images/82698-0-1489345954.jpg
+          style:
+            width: 100%
+            height: 250
+      - View:
+          style:
+            width: 100%
+            height: 10
+            backgroundColor: lightblue
+            borderRadius: 5%
+      - View:
+          style:
+            width: 100%
+            height: 200
+            backgroundColor: grey
+            borderColor: lightblue
+          children:
+            - Text:
+                style:
+                  fontSize: 15
+                  color: white
+                index: 1800
+      - View:
+          style:
+            width: 100%
+            height: 10
+            backgroundColor: lightblue
+            borderRadius: 5%
