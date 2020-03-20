@@ -1,0 +1,25 @@
+Exercise 1 (CQ):  Paste the code into a file called abort1.cpp, compile it, and verify that you get an error like the one above when you run it. 
+Yes
+
+Exercise 2 (CQ):  please paste the code (the class definition, the function f(), and main()) into a file abort2.cpp, and verify that you get the same kind of error if you try it .
+Yup
+
+Exercise 7 (CQ):  If a class does not use pointers, it probably does not need to define a copy constructor.  Explain why!
+It does not need a copy constucter since it would probably not have arrays and therefore does not need to make a copy of the array.
+Since the problem that the copy constructer solves is about multiple pointers pointing to the same memory address, not having pointers would eliminate the possibility of deleting an array twice.
+
+Exercise 8 (CQ):  If a function h() has a Note as an argument, but that argument is a reference, then when we call h(), we won't use the copy constructor.  Explain why!
+We wont use a copy constucter because it would be about the varibale Note that we use in the fucntion. Its not a copy since it is not making a copy of anything but referencing a varibale.
+
+Exercise 9 (CQ):  So far, we've been using a reference as the parameter for our copy constructors.  If the parameter to the copy constructor is not a reference, but instead is just a plain variable, then the copy constructor will not work.  Explain why!  
+
+(Hint:  what may happen if we need to construct a parameter for the copy constructor, with its own memory?  How exactly would we do that?)
+
+It wont work since it won't hold any address and wont know where to go. It must be a reference since it would tell the system where it should go. 
+
+Exercise 11 (CQ):  When does the destructor get called, if at all, in the above program?
+The deconstucter gets called after the display both display functions are called. 
+
+Exercise 12: Create a file called disc.cpp.  Copy the code above into the file, and then add a copy constructor for the UltimateFrisbee class.  (CQ) Would you want to allocate dynamic memory in the copy constructor? Why or why not?
+No because you want to have the array the same as the one you are trying to copy. Adding more memory would not make it the same and may mess up the array if you are trying to call a specific index.
+
