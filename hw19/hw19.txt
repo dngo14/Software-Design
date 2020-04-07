@@ -1,0 +1,6 @@
+Exercise 3 (CQ):  Does subtraction work left-to-right or right-to-left?
+Subtraction would work leftt to right
+
+Exercise 5 (CQ):  Verify that the code crashes as claimed: copy the relevant code into a file called CW.cpp, compile and run it. Note in your hw19.txt file whether you also get the crash and output similar to the above.
+similar crash and output
+
