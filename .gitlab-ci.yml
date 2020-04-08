@@ -1,8 +1,15 @@
-#image: stodevx/stograde:latest-gcc
-#build:
-#    stage: build
-#    script:
-#        - stograde --ci
-image: docker.cs.stolaf.edu:443/sd_managers/sd-backend:latest
+stages:
+  - stograde
+  - gcloud
+
+stograde:
+    stage: stograde
+    image: stodevx/stograde:latest-gcc
+    script:
+        - stograde ci
+        
 gcloud:
+    stage: gcloud
+    allow_failure: true
+    image: docker.cs.stolaf.edu:443/sd_managers/sd-backend:latest
     script: "source /SD-backend/deploy.sh sd-project-271102"
