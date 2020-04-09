@@ -1,0 +1,9 @@
+Exercise 1 (CQ):  Compare the code for the Ice_Cream0 and Ice_Cream classes.  What are all the differences you can find?
+a difference is that the length differs. Another is that in the first iteration
+the consturcter private parts contain takeout and order time while the new version dows not.
+The constructer in the new iteration is shorter takes the superclass as a variable to pass in information.
+
+Exercise 2 (CQ):  Do these classes require a copy constructor or assignment operator to prevent memory allocation errors?  Why or why not?
+This class does not need a copy constructer or assignment operator because there is no need to copy anything
+also the superclass values would change depending on when the object is called.
+
