@@ -1,0 +1,5 @@
+
+Exercise 5 (CQ):  Now compile and run the program.  Note any differences between the output and what you were expecting from the memory diagram.  Briefly explain what the program actually does.
+I thought that when you call d1.get it would go to the base class since the get function in it is not virtual.
+I also thought that b2p size is 16 but it is 8 since it is the size of the pointer 
+
