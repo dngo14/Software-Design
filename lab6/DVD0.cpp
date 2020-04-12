@@ -12,13 +12,13 @@ public:
         int len = 0;
         while(t[len++]);
         title = new char [len+1];
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < len+1; i++) {
           title[i] = t[i];
         }
         len = 0;
         while(dir[len]){len++;}
         director = new char[len+1];
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < len+1; i++) {
           director[i] = dir[i]; 
         }
     }
@@ -35,12 +35,12 @@ public:
       int len = 0;
       while(s.title[len++]);
       title = new char [len+1];
-      for (int i = 0; i < len; i++) {
+      for (int i = 0; i < len+1; i++) {
         title[i] = s.title[i];
       }
       len = 0;
       while(s.director[len++]);
-      for (int i = 0; i < len; i++) {
+      for (int i = 0; i < len+1; i++) {
         director[i] = s.director[i];
       }
       }
@@ -75,7 +75,7 @@ public:
     int len = 0;
     while(x[len++]);
     title = new char [len+1];
-    for (int i = 0; i < len; len++) {
+    for (int i = 0; i < len+1; len++) {
       title[i] = x[i];
     }
   }
@@ -85,7 +85,7 @@ public:
     int len = 0;
     while(x[len++]);
     title = new char [len+1];
-    for (int i = 0; i < len; len++) {
+    for (int i = 0; i < len+1; len++) {
       director[i] = x[i];
     }
   }
@@ -98,10 +98,10 @@ public:
     int leng = 0;
     while(s.title[len++]);
     while(s.director[leng++]);
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; i < len+1; i++) {
       title[i] = s.title[i];
     }
-    for (int i = 0; i < leng; i++) {
+    for (int i = 0; i < leng+1; i++) {
       director[i] = s.director[i];
     }
     return *this;
