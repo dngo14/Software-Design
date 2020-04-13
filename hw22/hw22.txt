@@ -1,0 +1,4 @@
+Exercise 2 (CQ):   Verify that, given such a pure virtual function, we cannot create a plain Food object, nor can we create a Nachos object if we comment out the print_order() function in the Nachos class.  Copy the compiler error messages into your .txt file.
+object of abstract class type "Food" is not allowed: -- function "Food::print_order" is a pure virtual function
+object of abstract class type "Nachos" is not allowed: -- pure virtual function "Food::print_order" has no overrider
+
