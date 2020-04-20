@@ -48,13 +48,13 @@ void write_message(int index, const char *author, const char *msg) {
 void display_messages(int num_messages) {
   for (int i = 100; i<(num_messages+1)*100; i+=100) {
     int n = 9;
-    while(global_mem[i+n]!='~') {
+    while(global_mem[i+n]!='\0') {
       cout << global_mem[i+n];
       n++;
     }
     cout << " ";
     int x = 20;
-    while(global_mem[i+x]!='~') {
+    while(global_mem[i+x]!='\0') {
       cout << global_mem[i+x];
       x++;
     }

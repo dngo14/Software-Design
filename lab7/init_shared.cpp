@@ -20,6 +20,9 @@ int main(int argc, char** argv) {
             global_mem[i] = '\n';
         }
         global_mem[10] = 0;
+        ofstream f(fname);
+        f.write(global_mem, 10000);
+        f.close();
 
         unsigned char num_messages = global_mem[10];
         char message [80];
@@ -32,9 +35,6 @@ int main(int argc, char** argv) {
         if (message[0] != 0) {
             num_messages++;
     }
-    ofstream f(fname);
-f.write(global_mem, 10000);
-f.close();
     }
 }
 }
