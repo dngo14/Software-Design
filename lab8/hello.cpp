@@ -5,7 +5,7 @@ int main() {
   int x;
   x = 3;
 
-  cout << "Hello, world!" << endl;
+  cout << "It was the best of times" << endl;
 
   return 0;
 }
