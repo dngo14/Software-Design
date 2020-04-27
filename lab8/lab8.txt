@@ -1,0 +1,39 @@
+1. in A.cpp we creating a varibale z that holds an integer 3.
+    We are then assigning w to hold the int 3
+    The result of the test shows that auto determines what type of value that it is holding.
+2. In the second iteration, we are creating a reference that is given the type
+int through the auto feature. We then change z holding 3 to hold 5 instead and then print out what w2's memory address is holding and what z is holding.
+
+3. In B.cpp we are creating an array holding numbers then we are printing them out through a for loop.
+4. This new iteration of the for loop seems to assign a number to x by using the array
+5. A warning is printed out and then it does not print anything out since you are assinging 19 to x.
+6. Running the new code it prints out 19 for the for loop. It does this because it changes the value at the memory address of x when it goes through the array.
+7. Adding the code prints out the array that is holding 19s since auto determines what the type the value is.
+8. Range based for loops seems to use the size of the array to determine the range of the for loop. To create one you need to call the for loop and have variable that is changed to hold the values.
+This is then seperated by a colon and then followed by the array that we are running through. 
+
+9. The difference is that you call must call it a vector followed by the type inside <> and then a name for the variable.
+The way to put values inside is the same.
+10. For my test I changed a specific index of the vector and seems to work like an array.
+11. The three lines of code prints out the values and the last line shows how many values there are in the vector. 
+12. push_back adds another value at then end of the vector and increases the size of the vector.
+Erase gets rid of a value completely.
+Insert puts in a value anywhere in the vector.
+Clear replaces the vector with 0.
+
+13. Makes an array that holds the individual characters. Then prints out the value at index 1 and the size of the array.
+14. Tested to see if I could change individual chars and you can.
+15. the addition operator expands the array of s to hold the additional string " ok".
+We then make another string and then < operator prints out 1 to signify true that s is longer than s2.
+
+16. This is making it so a string can hold an integer through a varibale. It is making an array that uses strings as indexes rather than numbers.
+17. I tried using indexes and using addition operator to change the value but none of those worked. 
+18. The new additions prints out the values of the array price - the string followed by the integer.
+The if statement checks if price["boots"] does not exist and then prints out "not found".
+The erase, erases the index socks and the value while clear gits rid of the array and replaces it with 0.
+
+19. prints out the value of num["aardvark"] and dict["aardvark"]
+then uses a for loop to print out the string and int held within array num.
+20. Experiment, I assigned num["aardvark"] to 5 and it works. I can change the value of the index if I use the right type.
+
+
